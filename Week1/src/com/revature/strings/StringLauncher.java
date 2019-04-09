@@ -40,6 +40,9 @@ public class StringLauncher {
 		sb.reverse();
 		System.out.println(sb);
 		
-	}
+		
+		System.gc();
 
+	}
+	
 }

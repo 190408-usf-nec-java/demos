@@ -64,10 +64,56 @@ public class Animal {
 	}
 
 	@Override
+	public Object clone() throws CloneNotSupportedException{
+		return super.clone();
+	}
+	
+	@Override
 	public String toString() {
 		return "Animal [color=" + color + ", Species=" + Species + ", numberOfLegs=" + numberOfLegs + ", name=" + name
 				+ "]";
 	}
 
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((Species == null) ? 0 : Species.hashCode());
+		result = prime * result + ((color == null) ? 0 : color.hashCode());
+		result = prime * result + ((name == null) ? 0 : name.hashCode());
+		result = prime * result + numberOfLegs;
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Animal other = (Animal) obj;
+		if (Species == null) {
+			if (other.Species != null)
+				return false;
+		} else if (!Species.equals(other.Species))
+			return false;
+		if (color == null) {
+			if (other.color != null)
+				return false;
+		} else if (!color.equals(other.color))
+			return false;
+		if (name == null) {
+			if (other.name != null)
+				return false;
+		} else if (!name.equals(other.name))
+			return false;
+		if (numberOfLegs != other.numberOfLegs)
+			return false;
+		return true;
+	}
+
+	
 	
 }

@@ -1,6 +1,6 @@
 package com.revature.objects;
 
-public class Bear extends Animal{
+public class Bear extends Animal implements Cloneable {
 
 	//we get four fields from our parent
 	
@@ -22,6 +22,12 @@ public class Bear extends Animal{
 //	public int familySize() {
 //		return numberOfBears;
 //	}
+	
+	@Override
+	public Object clone() throws CloneNotSupportedException{
+		return super.clone();
+	}
+	
 	
 	public String getFurColor() {
 		return furColor;
@@ -73,6 +79,39 @@ public class Bear extends Animal{
 	public String toString() {
 		return super.toString() + "Bear [furColor=" + furColor + ", favoriteFood=" + favoriteFood + "]";
 	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = super.hashCode();
+		result = prime * result + ((favoriteFood == null) ? 0 : favoriteFood.hashCode());
+		result = prime * result + ((furColor == null) ? 0 : furColor.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (!super.equals(obj))
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Bear other = (Bear) obj;
+		if (favoriteFood == null) {
+			if (other.favoriteFood != null)
+				return false;
+		} else if (!favoriteFood.equals(other.favoriteFood))
+			return false;
+		if (furColor == null) {
+			if (other.furColor != null)
+				return false;
+		} else if (!furColor.equals(other.furColor))
+			return false;
+		return true;
+	}
+
+	
 
 	
 	
