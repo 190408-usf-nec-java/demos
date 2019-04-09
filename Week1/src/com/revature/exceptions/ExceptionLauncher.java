@@ -3,18 +3,18 @@ package com.revature.exceptions;
 public class ExceptionLauncher {
 
 	public static void main(String[] args) {
-		WingFactory bww = new WingFactory("boneless", "Garlic Parmesan");
-		WingFactory quakerSteak = new WingFactory("2DayOldwings", "Dirty Socks");
+		WingFactory bww = WingFactory.getWingFactory();
+		WingFactory qsl = WingFactory.getWingFactory();
+		
+		if(bww == qsl) {
+			System.out.println("They are the exact same object in memory");
+		}
 	
 		for(int i = 0; i < 50; i++) {
 			try {
-				System.out.println(bww.getWings(20));
+				System.out.println(bww.getWings(20, "Buffalo"));
 			} catch (NoMoreWingsException e) {
-				try {
-					System.out.println(quakerSteak.getWings(40));
-				} catch (NoMoreWingsException e1) {
-					System.out.println("Somehow, quaker steak ran out of dirty sock wings");
-				}	
+				System.out.println("BWW has run out of wings");
 			}
 		}
 	
