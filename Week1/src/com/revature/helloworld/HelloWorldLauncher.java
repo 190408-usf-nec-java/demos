@@ -1,5 +1,7 @@
 package com.revature.helloworld;
 
+import com.revature.objects.Bear;
+
 public class HelloWorldLauncher {
 
 	
@@ -7,6 +9,8 @@ public class HelloWorldLauncher {
 		System.out.println("Hello World");
 		
 		System.out.println("Hello World again");
+		
+		Bear b = new Bear();
 	}
 	
 }
