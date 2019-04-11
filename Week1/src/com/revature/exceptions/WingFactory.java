@@ -1,5 +1,7 @@
 package com.revature.exceptions;
 
+import com.revature.models.Wing;
+
 public class WingFactory {
 
 	private static WingFactory wf = null;

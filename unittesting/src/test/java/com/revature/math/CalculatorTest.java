@@ -43,6 +43,7 @@ public class CalculatorTest {
 		//2+4 should be 6
 		assertThat(calc.div(2d,4d), is(equalTo(.5d)));
 		assertThat(calc.div(-4d, -4d), is(equalTo(1d)));
+		assertThat(calc.div(4d, 0d), is(equalTo(Double.POSITIVE_INFINITY)));
 
 	}
 	
