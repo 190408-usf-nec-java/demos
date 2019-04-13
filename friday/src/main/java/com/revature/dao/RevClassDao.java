@@ -8,5 +8,6 @@ import com.revature.models.Associate;
 public interface RevClassDao {
 
 	Set<Associate> getAssociates(int classId);
+	List<String> getAssignments(int classId);
 	
 }

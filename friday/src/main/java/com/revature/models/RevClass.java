@@ -1,5 +1,6 @@
 package com.revature.models;
 
+import java.util.List;
 import java.util.Set;
 
 public class RevClass {
@@ -12,6 +13,8 @@ public class RevClass {
 	private Set<Associate> students;
 	
 	private String trainer;
+	
+	private List<String> assignments;
 
 	public int getClassId() {
 		return classId;
@@ -45,12 +48,21 @@ public class RevClass {
 		this.trainer = trainer;
 	}
 
-	public RevClass(int classId, int numStudents, Set<Associate> students, String trainer) {
+	public List<String> getAssignments() {
+		return assignments;
+	}
+
+	public void setAssignments(List<String> assignments) {
+		this.assignments = assignments;
+	}
+
+	public RevClass(int classId, int numStudents, Set<Associate> students, String trainer, List<String> assignments) {
 		super();
 		this.classId = classId;
 		this.numStudents = numStudents;
 		this.students = students;
 		this.trainer = trainer;
+		this.assignments = assignments;
 	}
 
 	public RevClass() {
@@ -61,13 +73,14 @@ public class RevClass {
 	@Override
 	public String toString() {
 		return "RevClass [classId=" + classId + ", numStudents=" + numStudents + ", students=" + students + ", trainer="
-				+ trainer + "]";
+				+ trainer + ", assignments=" + assignments + "]";
 	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
+		result = prime * result + ((assignments == null) ? 0 : assignments.hashCode());
 		result = prime * result + classId;
 		result = prime * result + numStudents;
 		result = prime * result + ((students == null) ? 0 : students.hashCode());
@@ -84,6 +97,11 @@ public class RevClass {
 		if (getClass() != obj.getClass())
 			return false;
 		RevClass other = (RevClass) obj;
+		if (assignments == null) {
+			if (other.assignments != null)
+				return false;
+		} else if (!assignments.equals(other.assignments))
+			return false;
 		if (classId != other.classId)
 			return false;
 		if (numStudents != other.numStudents)
@@ -101,7 +119,6 @@ public class RevClass {
 		return true;
 	}
 
-	
 	
 	
 	

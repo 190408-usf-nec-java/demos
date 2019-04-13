@@ -17,10 +17,12 @@ public class RevClassDaoImpl implements RevClassDao{
 	
 	public RevClassDaoImpl() {
 		this.allClasses = new ArrayList<RevClass>();
-		this.allClasses.add(new RevClass(1, 1, new HashSet<Associate>(), "Alec"));
-		
+		this.allClasses.add(new RevClass(1, 1, new HashSet<Associate>(), "Alec", new ArrayList<String>()));
+		this.allClasses.get(0).getAssignments().add("Core Java");
+		this.allClasses.get(0).getAssignments().add("Quiz1");
 		Associate bill = new Associate("Bill", new ArrayList<Grade>(), new HashMap<String, Boolean>());
 		bill.getGrades().add(new Grade("Core Java", 80.00));
+		bill.getGrades().add(new Grade("Quiz1", 90.00));
 		bill.getAttendance().put("Monday", true);
 		bill.getAttendance().put("Tuesday", true);
 		bill.getAttendance().put("Wednesday", true);
@@ -28,6 +30,12 @@ public class RevClassDaoImpl implements RevClassDao{
 		bill.getAttendance().put("Friday", false);
 		
 		this.allClasses.get(0).getStudents().add(bill);
+		
+		Associate devin = new Associate("Devin", new ArrayList<Grade>(), new HashMap<String, Boolean>());
+		devin.getGrades().add(new Grade("Core Java", 20.00));
+		devin.getGrades().add(new Grade("Quiz1", 50.00));
+		
+		this.allClasses.get(0).getStudents().add(devin);
 		
 		
 	}
@@ -47,5 +55,24 @@ public class RevClassDaoImpl implements RevClassDao{
 		}
 		return rc.getStudents();
 	}
+
+
+	@Override
+	public List<String> getAssignments(int classId) {
+		RevClass rc = null;
+		
+		for(RevClass r : this.allClasses)
+		{
+			if(r.getClassId() == classId) {
+				rc = r;
+			}
+		}
+		if(rc == null) {
+			return null;
+		}
+		return rc.getAssignments();
+	}
+	
+	
 
 }

@@ -1,5 +1,6 @@
 package com.revature.service;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -35,7 +36,25 @@ public class RevClassServiceImpl implements RevClassService {
 
 	public List<Grade> calculateAvgGrades(int classId) {
 		// TODO Auto-generated method stub
-		return null;
+		Set<Associate> students = rcd.getAssociates(classId);
+		List<Grade> allGrades= new ArrayList<Grade>();
+		for(String assign : rcd.getAssignments(classId)) {
+			String gradeName = "";
+			Double avgGrade = 0d;
+			for(Associate a : students) {
+				for(Grade g : a.getGrades()) {
+					if(g.getGradeName() == assign) {
+						avgGrade += g.getGradeValue();
+					}
+				}
+			}
+			avgGrade = avgGrade/students.size();
+			allGrades.add(new Grade(assign, avgGrade));
+		}
+		
+		
+		
+		return allGrades;
 	}
 
 	

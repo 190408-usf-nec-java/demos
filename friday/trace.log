@@ -15,3 +15,76 @@
 2019-04-12 13:40:23  [INFO] findByAttendance
 2019-04-12 13:40:23  [INFO] What would you like to do at Revature Admin?
 2019-04-12 13:40:55  [INFO] What Class would you like the Attendance of?
+2019-04-12 15:03:25  [INFO] What would you like to do at Revature Admin?
+2019-04-12 15:03:32  [INFO] Average Grades of What Class?
+2019-04-12 15:03:34  [INFO] Grade [gradeName=Core Java, gradeValue=80.0]
+2019-04-12 15:03:34  [INFO] Grade [gradeName=Quiz1, gradeValue=90.0]
+2019-04-12 15:03:34  [INFO] Invalid Command
+2019-04-12 15:03:34  [INFO] Valid Commands are: 
+2019-04-12 15:03:34  [INFO] findByAttendance
+2019-04-12 15:03:34  [INFO] What would you like to do at Revature Admin?
+2019-04-12 15:03:34  [INFO] Invalid Command
+2019-04-12 15:03:34  [INFO] Valid Commands are: 
+2019-04-12 15:03:34  [INFO] findByAttendance
+2019-04-12 15:03:34  [INFO] What would you like to do at Revature Admin?
+2019-04-12 15:06:37  [INFO] What would you like to do at Revature Admin?
+2019-04-12 15:06:43  [INFO] Average Grades of What Class?
+2019-04-12 15:06:45  [INFO] Grade [gradeName=Core Java, gradeValue=80.0]
+2019-04-12 15:06:45  [INFO] Grade [gradeName=Quiz1, gradeValue=90.0]
+2019-04-12 15:08:18  [INFO] Invalid Command
+2019-04-12 15:08:18  [INFO] Valid Commands are: 
+2019-04-12 15:08:18  [INFO] findByAttendance
+2019-04-12 15:08:18  [INFO] What would you like to do at Revature Admin?
+2019-04-12 15:08:18  [INFO] Invalid Command
+2019-04-12 15:08:18  [INFO] Valid Commands are: 
+2019-04-12 15:08:18  [INFO] findByAttendance
+2019-04-12 15:08:18  [INFO] What would you like to do at Revature Admin?
+2019-04-12 15:08:32  [INFO] What would you like to do at Revature Admin?
+2019-04-12 15:08:39  [INFO] What Class would you like the Attendance of?
+2019-04-12 15:08:41  [INFO] Associate [name=Bill, grades=[Grade [gradeName=Core Java, gradeValue=80.0], Grade [gradeName=Quiz1, gradeValue=90.0]], attendance={Monday=true, Thursday=true, Friday=false, Wednesday=true, Tuesday=true}]
+2019-04-12 15:08:50  [INFO] What would you like to do at Revature Admin?
+2019-04-12 15:08:50  [INFO] Invalid Command
+2019-04-12 15:08:50  [INFO] Valid Commands are: 
+2019-04-12 15:08:50  [INFO] findByAttendance
+2019-04-12 15:08:50  [INFO] What would you like to do at Revature Admin?
+2019-04-12 15:08:53  [INFO] Invalid Command
+2019-04-12 15:08:53  [INFO] Valid Commands are: 
+2019-04-12 15:08:53  [INFO] findByAttendance
+2019-04-12 15:08:53  [INFO] What would you like to do at Revature Admin?
+2019-04-12 15:08:54  [INFO] Invalid Command
+2019-04-12 15:08:54  [INFO] Valid Commands are: 
+2019-04-12 15:08:54  [INFO] findByAttendance
+2019-04-12 15:08:54  [INFO] What would you like to do at Revature Admin?
+2019-04-12 15:08:55  [INFO] Invalid Command
+2019-04-12 15:08:55  [INFO] Valid Commands are: 
+2019-04-12 15:08:55  [INFO] findByAttendance
+2019-04-12 15:08:55  [INFO] What would you like to do at Revature Admin?
+2019-04-12 15:09:00  [INFO] Average Grades of What Class?
+2019-04-12 15:09:01  [INFO] Grade [gradeName=Core Java, gradeValue=80.0]
+2019-04-12 15:09:01  [INFO] Grade [gradeName=Quiz1, gradeValue=90.0]
+2019-04-12 15:11:23  [INFO] What would you like to do at Revature Admin?
+2019-04-12 15:11:26  [INFO] Average Grades of What Class?
+2019-04-12 15:12:19  [INFO] What would you like to do at Revature Admin?
+2019-04-12 15:12:25  [INFO] What Class would you like the Attendance of?
+2019-04-12 15:12:27  [INFO] Associate [name=Bill, grades=[Grade [gradeName=Core Java, gradeValue=80.0], Grade [gradeName=Quiz1, gradeValue=90.0]], attendance={Monday=true, Thursday=true, Friday=false, Wednesday=true, Tuesday=true}]
+2019-04-12 15:12:32  [INFO] What would you like to do at Revature Admin?
+2019-04-12 15:12:32  [INFO] Invalid Command
+2019-04-12 15:12:32  [INFO] Valid Commands are: 
+2019-04-12 15:12:32  [INFO] findByAttendance
+2019-04-12 15:12:32  [INFO] What would you like to do at Revature Admin?
+2019-04-12 15:12:35  [INFO] Invalid Command
+2019-04-12 15:12:35  [INFO] Valid Commands are: 
+2019-04-12 15:12:35  [INFO] findByAttendance
+2019-04-12 15:12:35  [INFO] What would you like to do at Revature Admin?
+2019-04-12 15:12:40  [INFO] Average Grades of What Class?
+2019-04-12 22:16:01  [INFO] What would you like to do at Revature Admin?
+2019-04-12 22:16:07  [INFO] Average Grades of What Class?
+2019-04-12 22:18:17  [INFO] What would you like to do at Revature Admin?
+2019-04-12 22:18:22  [INFO] Average Grades of What Class?
+2019-04-12 22:18:23  [INFO] Grade [gradeName=Core Java, gradeValue=50.0]
+2019-04-12 22:18:23  [INFO] Grade [gradeName=Quiz1, gradeValue=70.0]
+2019-04-12 22:18:28  [INFO] What would you like to do at Revature Admin?
+2019-04-12 22:18:28  [INFO] Invalid Command
+2019-04-12 22:18:28  [INFO] Valid Commands are: 
+2019-04-12 22:18:28  [INFO] findByAttendance
+2019-04-12 22:18:28  [INFO] What would you like to do at Revature Admin?
